@@ -1,0 +1,51 @@
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ============ 虚拟环境 ============
+venv/
+.venv/
+env/
+ENV/
+.python-version
+
+# ============ IDE / 编辑器 ============
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ============ 运行时生成的数据（含用户上传图片，体积大，不应提交） ============
+static/uploads/
+static/results/
+static/history.db
+static/report.xlsx
+
+# ============ 训练中间产物 ============
+# 保留 runs/detect/pcb_defect/weights/best.pt、results.csv 与曲线图，
+# 仅忽略 YOLO 训练过程产生的缓存与临时目录
+runs/**/*.cache
+runs/**/labels.cache
+dataset/**/*.cache
+dataset/**/labels.cache
+wandb/
+*.log
+
+# ============ 中间结果图 ============
+out.jpg
+test_result.jpg
+traditional_result.jpg
+runs/detect/predict*/
+runs/detect/predict-*/
+
+# ============ 系统文件 ============
+.DS_Store
+Thumbs.db
+desktop.ini
